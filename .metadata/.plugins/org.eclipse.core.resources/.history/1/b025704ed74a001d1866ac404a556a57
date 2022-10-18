@@ -1,0 +1,28 @@
+
+public class Chapter {
+
+	String name;
+
+	public Chapter(String name) {
+		this.name = name;
+	}
+
+	
+	public int createSubChapter(String subChapter) {
+		
+		
+		return 0;
+	}
+	
+	public int getSubChapter(int indexChapter) {
+		
+		return 0;
+	}
+	
+	public void print() {
+		
+		
+		
+	}
+	
+}

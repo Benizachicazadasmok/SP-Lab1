@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Book {
+
+	 String title;
+	 Author auth;
+	
+
+	public Book(String title, Author auth) {
+		this.title = title;
+		this.auth = auth;
+
+	}
+
+
+	public void addAuthor(){
+		
+		
+	}
+	
+
+	public void print() {
+
+
+
+	}
+}

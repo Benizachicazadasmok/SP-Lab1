@@ -1,0 +1,17 @@
+
+public class Paragraph {
+
+	String text;
+
+	public Paragraph(String text) {
+		super();
+		this.text = text;
+	}
+	
+	public void print() {
+		
+		
+		
+	}
+	
+}

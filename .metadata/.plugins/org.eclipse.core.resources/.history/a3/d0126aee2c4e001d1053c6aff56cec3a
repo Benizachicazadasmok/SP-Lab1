@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public interface Element {
+	List<Paragraph> p = new ArrayList<Paragraph>();
+	List<Image> i = new ArrayList<Image>();
+	List<Table> t = new ArrayList<Table>();
+
+	public static void print() {
+
+		Iterator<Paragraph> i_p = p.iterator();
+		Iterator<Image> i_i = i.iterator();
+		Iterator<Table> i_t = t.iterator();
+		
+		System.out.println(p);
+
+	}
+}

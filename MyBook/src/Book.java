@@ -3,40 +3,37 @@ import java.util.List;
 
 public class Book {
 
-	private String title;
-	private List<String> paragraph;
-	private List<String> image;
-	private List<String> table;
+	String title;
+
+	Author a;
+
+	List<Chapter> c = new ArrayList<Chapter>();
 
 	public Book(String title) {
 		this.title = title;
-		this.paragraph = new ArrayList<String>();
-		this.image = new ArrayList<String>();
-		this.table = new ArrayList<String>();
 
 	}
 
-	public void createNewParagraph(String paragraph) {
+	public void addAuthor(Author auth) {
 
-		this.paragraph.add(paragraph);
-
-	}
-
-	public void createNewImage(String image) {
-
-		this.image.add(image);
+		this.a = auth;
 
 	}
 
-	public void createNewTable(String table) {
+	public int createChapter(String chapter) {
+		Chapter ch = new Chapter(chapter);
+		this.c.add(ch);
+		return this.c.indexOf(ch);
+	}
 
-		this.table.add(table);
+	public Chapter getChapter(int indexChapter) {
 
+		return this.c.get(indexChapter);
 	}
 
 	public void print() {
 
-		System.out.println(this.title + this.paragraph + this.image + this.table);
+		System.out.println(this.title + " " + this.a.print());
 
 	}
 }

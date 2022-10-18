@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\bnei\Desktop\Faculta\An 3\Sabloane de Proiectare\Laborator\SP-Lab1\.metadata\.plugins\org.eclipse.jdt.core
+1955468450.index
+1647716323.index
+1865797976.index
