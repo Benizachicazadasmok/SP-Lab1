@@ -1,0 +1,36 @@
+
+public class Image implements Element {
+
+	String url;
+	
+	public Image(String url) {
+		super();
+		this.url = url;
+	}
+
+	@Override
+	public void print() {
+		System.out.println(this.url);
+		
+	}
+
+	@Override
+	public void add(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void get(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+ 
+
+}

@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class Section implements Element {
+
+	String title;
+
+	List<Element> e = new ArrayList<Element>();
+
+	public Section(String title) {
+		super();
+		this.title = title;
+	}
+
+	@Override
+	public void print() {
+
+	}
+
+	@Override
+	public void add(Element e) {
+		this.e.add(e);
+//		System.out.println(this.e);
+
+		Iterator<Element> it2 = this.e.iterator();
+
+		while (it2.hasNext()) {
+			it2.next();
+			if (it2.getClass().isInstance(i)) {
+				System.out.println(it2.next());
+			}
+
+			if (it2.getClass().isInstance(p)) {
+				System.out.println(it2.next());
+			}
+			if (it2.getClass().isInstance(s)) {
+				System.out.println(it2.next());
+			}
+
+			if (it2.getClass().isInstance(t)) {
+				System.out.println(it2.next());
+			}
+
+		}
+	}
+
+	@Override
+	public void remove(Element e) {
+		this.e.remove(e);
+	}
+
+	@Override
+	public Element get(int i) {
+		return this.e.get(i);
+
+	}
+
+}

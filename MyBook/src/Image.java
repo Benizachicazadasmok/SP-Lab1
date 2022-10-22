@@ -1,15 +1,36 @@
 
 public class Image implements Element {
 
-	String imageName;
+	String url;
 
-	public Image(String imageName) {
-		this.imageName = imageName;
+	public Image(String url) {
+		super();
+		this.url = url;
 	}
 
-	public String print() {
-//		System.out.println(this.imageName);
-		return this.imageName;
+	@Override
+	public void print() {
+		System.out.println("Image with name: " + this.url);
+
+	}
+
+	@Override
+	public void add(Element e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void remove(Element e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Element get(int i) {
+		return null;
+		// TODO Auto-generated method stub
+
 	}
 
 }

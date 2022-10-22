@@ -1,39 +1,42 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class Book {
+public class Book extends Section {
 
-	String title;
-
-	Author a;
-
-	List<Chapter> c = new ArrayList<Chapter>();
+	List<Author> a = new ArrayList<Author>();
 
 	public Book(String title) {
-		this.title = title;
+		super(title);
+	}
+
+	public void addAuthor(Author a) {
+		this.a.add(a);
 
 	}
 
-	public void addAuthor(Author auth) {
+	public void addContent(Element e) {
+		this.e.add(e);
 
-		this.a = auth;
-
-	}
-
-	public int createChapter(String chapter) {
-		Chapter ch = new Chapter(chapter);
-		this.c.add(ch);
-		return this.c.indexOf(ch);
-	}
-
-	public Chapter getChapter(int indexChapter) {
-
-		return this.c.get(indexChapter);
 	}
 
 	public void print() {
 
-		System.out.println(this.title + " " + this.a.print());
+		System.out.println("Book: " + this.title + "\n");
+		Iterator<Author> it = a.iterator();
+
+		System.out.println("Authors:");
+
+		while (it.hasNext()) {
+			System.out.println("Author: " + it.next().print());
+		}
+		System.out.println();
+		
+		Iterator<Element> it2 = this.e.iterator();
+		while (it2.hasNext()) {
+			it2.next().print();
+		}
 
 	}
+
 }

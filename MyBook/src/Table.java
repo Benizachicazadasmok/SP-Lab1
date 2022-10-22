@@ -1,15 +1,30 @@
 
 public class Table implements Element {
-
-	String title;
-
-	public Table(String title) {
-		this.title = title;
+//something Wololooo!
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public String print() {
-//		System.out.println(this.title);
-		return this.title;
+	@Override
+	public void add(Element e) {
+		// TODO Auto-generated method stub
+		
 	}
+
+	@Override
+	public void remove(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Element get(int i) {
+		return null;
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }
