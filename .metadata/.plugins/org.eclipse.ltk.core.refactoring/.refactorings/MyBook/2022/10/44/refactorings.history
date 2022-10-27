@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;InageProxy&apos; to &apos;ImageProxy&apos;&#x0D;&#x0A;- Original project: &apos;MyBook&apos;&#x0D;&#x0A;- Original element: &apos;InageProxy&apos;&#x0D;&#x0A;- Renamed element: &apos;ImageProxy&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;InageProxy&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{InageProxy.java[InageProxy" matchStrategy="1" name="ImageProxy" qualified="false" references="true" similarDeclarations="false" stamp="1666860452741" textual="false" version="1.0"/>
+</session>

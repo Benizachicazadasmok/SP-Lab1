@@ -1,0 +1,17 @@
+
+public class ImageProxy extends Image {
+
+	public ImageProxy(String url) {
+		super(url);
+
+	}
+
+	public Image loadImage() {
+		
+		if (this.url == null) {
+			Image realImg = new Image(url);
+		}
+		return realImg;
+
+	}
+}

@@ -9,11 +9,9 @@ public class Main {
 		Section playboyS2 = new Section("Summer Girls");
 		playboyS2.add(img2);
 		playboyS2.add(img3);
-		
 		Book playboy = new Book("Playboy");
 		playboy.addContent(playboyS1);
 		playboy.addContent(playboyS2);
-		
 		long endTime = System.currentTimeMillis();
 		System.out.println("Creation of the content took " + (endTime - startTime) + " milliseconds");
 		startTime = System.currentTimeMillis();

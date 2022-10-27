@@ -1,6 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
-public class Image implements Picture, Element {
+public class Image implements Element {
 
 	String url;
 	String content;

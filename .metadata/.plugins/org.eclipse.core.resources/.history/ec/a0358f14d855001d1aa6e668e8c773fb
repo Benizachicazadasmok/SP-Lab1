@@ -1,0 +1,42 @@
+
+public class ImageProxy implements Picture, Element {
+
+	private static final String url = null;
+	private Image realImage = null;
+
+	public ImageProxy(String url) {
+		super(url);
+
+	}
+
+	public Image loadImage() {
+		if (realImage == null) {
+			this.realImage = new Image(this.url);
+		}
+		return this.realImage;
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(Element e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Element get(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

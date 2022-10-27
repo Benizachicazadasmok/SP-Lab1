@@ -13,7 +13,6 @@ public class Main {
 		Book playboy = new Book("Playboy");
 		playboy.addContent(playboyS1);
 		playboy.addContent(playboyS2);
-		
 		long endTime = System.currentTimeMillis();
 		System.out.println("Creation of the content took " + (endTime - startTime) + " milliseconds");
 		startTime = System.currentTimeMillis();

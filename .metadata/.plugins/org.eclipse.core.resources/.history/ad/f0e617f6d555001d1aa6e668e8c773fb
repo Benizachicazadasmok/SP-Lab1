@@ -1,0 +1,18 @@
+public interface Picture {
+
+	public static String url() {
+		return null;
+
+	}
+
+	public static int dim() {
+		return null;
+
+	}
+
+	public static PictureContent content() {
+		return null;
+
+	}
+
+}

@@ -7,13 +7,14 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="public class Main {"/>
 			<item value="import java.util.ArrayList;"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1036"/>
+		<item key="DIALOG_X_ORIGIN" value="779"/>
 		<item key="DIALOG_Y_ORIGIN" value="433"/>
 		<item key="DIALOG_WIDTH" value="511"/>
 		<item key="DIALOG_HEIGHT" value="523"/>

@@ -1,0 +1,17 @@
+
+public class ImageProxy implements Picture, Element {
+
+	private Image realImage = null;
+
+	public ImageProxy(String url) {
+		super(url);
+
+	}
+
+	public Image loadImage() {
+		if (realImage == null) {
+			this.realImage = new Image(this.url);
+		}
+		return this.realImage;
+	}
+}

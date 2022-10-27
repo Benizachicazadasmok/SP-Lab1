@@ -1,0 +1,19 @@
+
+public interface Picture {
+
+	public static String url() {
+		
+		
+	}
+	
+public static String dim() {
+		
+		
+	}
+
+public static String content() {
+	
+	
+}
+	
+}
