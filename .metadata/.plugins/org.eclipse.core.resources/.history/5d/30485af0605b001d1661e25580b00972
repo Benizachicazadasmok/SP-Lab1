@@ -1,0 +1,8 @@
+public interface AlignStrategy {
+
+	public void render(Paragraph p, AlignLeft al);
+	public void render(Paragraph p, AlignCenter ac);
+	public void render(Paragraph p, AlignRight ar);
+	
+
+}

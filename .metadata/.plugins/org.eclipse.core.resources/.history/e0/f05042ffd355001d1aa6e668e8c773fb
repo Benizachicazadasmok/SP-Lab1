@@ -1,9 +1,0 @@
-
-public class InageProxy extends Image{
-
-	public InageProxy(String url) {
-		super(url);
-		
-	}
-
-}

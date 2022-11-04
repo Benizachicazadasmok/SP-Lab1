@@ -1,0 +1,6 @@
+import System.Console.Terminal.Size;
+public interface AlignStrategy {
+
+	public void render(Paragraph p);
+
+}
