@@ -1,0 +1,12 @@
+package BookStuff;
+
+import java.awt.ComponentOrientation;
+
+public interface AlignStrategy {
+
+	public String render(String title);
+	public ComponentOrientation getAlignStrategy(); 
+
+	
+
+}

@@ -1,0 +1,13 @@
+package BookStuff;
+
+import java.awt.ComponentOrientation;
+
+public class AlignLeft implements AlignStrategy {
+
+	@Override
+	public String render(String text) {
+		return text + "###" + "###";
+	}
+
+
+}

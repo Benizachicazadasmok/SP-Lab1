@@ -1,0 +1,11 @@
+package BookStuff;
+
+import javax.swing.JTextField;
+public interface AlignStrategy {
+
+	public String render(String title);
+	public JTextField getAlignStrategy(); 
+
+	
+
+}
