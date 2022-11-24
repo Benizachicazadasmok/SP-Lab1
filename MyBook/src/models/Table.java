@@ -14,8 +14,7 @@ public class Table implements Element {
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Paragraph: " + this.t);
 	}
 
 	@Override

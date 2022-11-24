@@ -1,0 +1,16 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Restaurant {
+
+	List<FelDeMancare> comanda = new ArrayList<FelDeMancare>();
+	
+	public void addMeniu(FelDeMancare fdm) {
+		
+		
+		
+	}
+
+}

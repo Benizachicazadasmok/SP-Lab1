@@ -1,0 +1,25 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Client {
+
+	List<FelDeMancare> comanda = new ArrayList<FelDeMancare>();
+	
+	public Client(List<FelDeMancare> comanda) {
+		//super();
+		this.comanda = comanda;
+	}
+
+	public void Comanda(FelDeMancare fdm) {
+		
+		int pret_total;
+		this.comanda.add(fdm);
+		pret_total+= fdm.pret;
+		
+	}
+	
+	public void 
+	
+}

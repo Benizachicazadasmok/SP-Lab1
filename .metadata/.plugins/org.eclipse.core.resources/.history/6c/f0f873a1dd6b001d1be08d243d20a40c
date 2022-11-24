@@ -1,0 +1,10 @@
+package test123;
+
+public interface FelDeMancare {
+
+	String nume = "";
+	int pret = 0;
+	
+	
+	
+}

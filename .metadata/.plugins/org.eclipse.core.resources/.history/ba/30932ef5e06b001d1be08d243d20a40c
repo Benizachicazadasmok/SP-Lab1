@@ -1,0 +1,31 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Restaurant {
+
+	
+	String nume;
+	List<FelDeMancare> comanda = new ArrayList<FelDeMancare>();
+
+	
+	
+	public Restaurant(String nume,List<FelDeMancare> comanda) {
+		super();
+		this.nume = nume;
+		this.comanda = comanda;
+	}
+	
+	public void alegeFelDeMancare() {
+		
+		
+		
+	}
+
+	public void comanda(FelDeMancare fdm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+
+		Client c = new Client();
+		
+		List<FelDeMancare> comanda_clientului= new ArrayList<FelDeMancare>();
+		
+		
+		List<FelDeMancare> fdm_r1= new ArrayList<FelDeMancare>();
+
+		Pizza pizz1 = new Pizza("Pizza1",1);
+		Paste pas2 = new Paste("Paste1", 2);
+		Salata sal1 = new Salata("Salata1", 3); 
+		
+		
+		fdm_r1.add(pizz1);
+		fdm_r1.add(pas2);
+		fdm_r1.add(sal1);
+		Restaurant r1 = new Restaurant("Restaurant1",fdm_r1);
+		
+
+		
+		c.Comanda(r1,comanda_clientului);
+		c.print();
+		
+	}
+
+}

@@ -1,0 +1,43 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import models.Author;
+
+public class Client {
+
+	Comanda c;
+	int pret_total;
+	List<List<FelDeMancare>> cos = new ArrayList<List<FelDeMancare>>();
+
+	public Client() {
+
+	}
+
+	public void Comanda(Restaurant r, List<FelDeMancare> fdm) {
+
+		this.c = new Comanda(r, fdm);
+		for (int i = 0; i < fdm.size(); i++) {
+
+			pret_total += fdm.get(i).pret;
+
+		}
+		this.cos.add(fdm);
+
+	}
+
+	public void print() {
+
+		Iterator<FelDeMancare> it = this.c.l.iterator();
+		System.out.println("Comanda: ");
+		while (it.hasNext()) {
+			it.next().print();
+
+		}
+		System.out.println("Pret total: " + this.pret_total);
+
+	}
+
+}

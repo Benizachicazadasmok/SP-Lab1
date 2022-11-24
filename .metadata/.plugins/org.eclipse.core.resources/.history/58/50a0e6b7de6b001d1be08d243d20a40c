@@ -1,0 +1,12 @@
+package test123;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+
+		Pizza pizz1 = new Pizza();
+		Paste pas2 = new Paste();
+		Salata sal1 = new Salata(); 
+		
+	}
+
+}

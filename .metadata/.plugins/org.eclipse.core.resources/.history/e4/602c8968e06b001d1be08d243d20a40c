@@ -1,0 +1,23 @@
+package test123;
+
+import java.util.List;
+
+public class Main {
+	public static void main(String[] args) throws Exception {
+
+		Client c = new Client();
+		
+		List<FelDeMancare> = new ArrayList<FelDeMancare>();
+
+		Pizza pizz1 = new Pizza("Pizza1",1);
+		Paste pas2 = new Paste("Paste1", 2);
+		Salata sal1 = new Salata("Salata1", 3); 
+		
+		Restaurant r1 = new Restaurant("Restaurant1",);
+		
+		c.Comanda()
+		c.print();
+		
+	}
+
+}

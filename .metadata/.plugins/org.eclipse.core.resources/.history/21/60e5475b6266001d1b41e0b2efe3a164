@@ -1,0 +1,55 @@
+package models;
+
+public class TableOfContentsVisitor implements Visitor {
+
+	TableOfContents ToC;
+
+	
+
+	public TableOfContents getTableOfContentsVisitor() {
+
+		return this.ToC;
+
+	}
+
+	@Override
+	public void visitBook(Book b) {
+		this.ToC.le.add(b);
+	}
+
+	@Override
+	public void visitSection(Section b) {
+		this.ToC.le.add(b);
+
+	}
+
+	@Override
+	public void visitTableOfContents(TableOfContents b) {
+		this.ToC.le.add(b);
+
+	}
+
+	@Override
+	public void visitParagraph(Paragraph b) {
+		this.ToC.le.add(b);
+
+	}
+
+	@Override
+	public void visitImageProxy(ImageProxy b) {
+		this.ToC.le.add(b);
+
+	}
+
+	@Override
+	public void visitImage(Image b) {
+		this.ToC.le.add(b);
+	}
+
+	@Override
+	public void visitTable(Table b) {
+		this.ToC.le.add(b);
+
+	}
+
+}

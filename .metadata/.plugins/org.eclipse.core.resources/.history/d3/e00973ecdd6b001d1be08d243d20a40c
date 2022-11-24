@@ -1,0 +1,11 @@
+package test123;
+
+public class Paste  implements FelDeMancare{
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

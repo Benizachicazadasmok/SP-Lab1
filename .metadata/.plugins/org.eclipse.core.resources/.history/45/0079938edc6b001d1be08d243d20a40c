@@ -1,0 +1,8 @@
+package test123;
+
+public class FelDeMancare {
+
+	String nume;
+	int pret;
+	
+}

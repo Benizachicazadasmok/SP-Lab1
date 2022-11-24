@@ -1,0 +1,35 @@
+package test123;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+import models.Author;
+
+public class Client {
+
+	int pret_total;
+
+	public Client() {
+
+	}
+
+	public void Comanda(Restaurant r, FelDeMancare fdm) {
+
+		Comanda c
+		this.comanda.add(fdm);
+		this.pret_total += fdm.pret;
+
+	}
+
+	public void print() {
+
+		Iterator<FelDeMancare> it = comanda.iterator();
+
+		while (it.hasNext()) {
+			System.out.println(it.next());
+		}
+
+	}
+
+}

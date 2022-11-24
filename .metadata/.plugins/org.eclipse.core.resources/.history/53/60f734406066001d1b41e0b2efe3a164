@@ -1,0 +1,52 @@
+package models;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class TableOfContents implements Element {
+	int k;
+	
+	List<Element> le = new ArrayList<Element>();
+
+	@Override
+	public void print() {
+		System.out.println("Table of contents: ");
+		
+		Iterator<Element> it = le.iterator();
+
+		System.out.println("Cuprins:");
+
+		while (it.hasNext()) {
+			System.out.println(it.next() + ".........." + this.k);
+		}
+
+	}
+
+	@Override
+	public void add(Element e) {
+		this.le.add(e);
+		k++;
+
+	}
+
+	@Override
+	public void remove(Element e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Element get(int i) {
+		return null;
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void accept(Visitor v) {
+		v.visitTableOfContents(this);
+
+	}
+
+}

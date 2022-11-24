@@ -1,0 +1,17 @@
+package test123;
+
+public class Pizza implements FelDeMancare {
+
+	public Pizza(String nume, int pret) {
+		super();
+		nume = nume;
+		pret = pret;
+	}
+
+	@Override
+	public void print() {
+		System.out.println("Numele fel de mancare: " + nume + "Pret: " + pret);
+
+	}
+
+}

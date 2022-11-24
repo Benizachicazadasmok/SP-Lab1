@@ -1,0 +1,10 @@
+package test123;
+
+public class Paste  implements FelDeMancare{
+
+	public void print() {
+		System.out.println("Numele fel de mancare: " + nume + "Pret: " + pret);
+
+	}
+
+}
