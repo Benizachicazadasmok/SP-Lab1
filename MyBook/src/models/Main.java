@@ -5,11 +5,17 @@ import services.AlignLeft;
 import services.AlignRight;
 
 public class Main {
+	public static void Printing() {
+		DocumentManager.getInstance().getBook().print();
+	}
+
 	public static void main(String[] args) throws Exception {
 		Book b = new Book("Wololooo");
+
+		DocumentManager.getInstance().setBook(b);
 		Author a = new Author("Ioan Marcu");
 		b.addAuthor(a);
-		
+
 		Section cap1 = new Section("Capitolul 1");
 		Paragraph p1 = new Paragraph("Paragraph 1");
 		Paragraph p2 = new Paragraph("Paragraph 2");
@@ -23,11 +29,13 @@ public class Main {
 		cap1.add(new Image("ImageTwo"));
 		cap1.add(new Paragraph("Some text"));
 		cap1.add(new Table("Table 1"));
-		
+
 		TableOfContentsVisitor v = new TableOfContentsVisitor();
-		b.accept(v);
+
 		b.addContent(v.getTableOfContentsVisitor());
-		b.print();
- 
-		}
+		b.accept(v);
+
+		Printing();
+
+	}
 }
